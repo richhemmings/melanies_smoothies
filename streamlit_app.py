@@ -21,7 +21,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 #st.dataframe(data=my_dataframe, use_container_width=True)
 # Convert Snowpark dataframe to Pandas dataframe so we can use the LOC function
 pd_df=my_dataframe.to_pandas()
-st.dataframe(pd_df)
+#st.dataframe(pd_df) # Show the dataframe
 
 customer_name = st.text_input('Name on smoothie:')
 st.write (customer_name)
